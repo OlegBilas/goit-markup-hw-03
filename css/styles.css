@@ -75,19 +75,6 @@ nav {
   color: inherit;
 }
 
-.link.foot-adress {
-  font-weight: inherit;
-  line-height: 1.71;
-  letter-spacing: inherit;
-  color: var(--background-color);
-}
-.link.foot-contacts {
-  font-weight: inherit;
-  line-height: 1.71;
-  letter-spacing: inherit;
-  color: rgba(255, 255, 255, 0.6);
-}
-
 .link:hover,
 .link:focus,
 .active {
@@ -121,16 +108,28 @@ ul {
   align-items: center;
 }
 /* Footer */
+.foot-adress {
+  font-weight: inherit;
+  line-height: 1.71;
+  letter-spacing: inherit;
+  color: var(--background-color);
+  margin-bottom: 9px;
+}
+.foot-contacts {
+  font-weight: inherit;
+  line-height: 1.71;
+  letter-spacing: inherit;
+  color: rgba(255, 255, 255, 0.6);
+}
 .container .link.logo {
-  margin-bottom: 20px;
+  margin-top: 24px;
+  margin-bottom: 25px;
 }
 address {
   font-style: normal;
 }
-.foot-adress {
-  margin-bottom: 9px;
-}
-.foot-contacts:not(:last-child) {
+
+address li:not(:last-child) {
   margin-bottom: 9px;
 }
 
