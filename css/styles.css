@@ -220,7 +220,7 @@ footer {
   line-height: 1.88;
 }
 .list.buttons {
-  /* justify-content: center; */
+  justify-content: center;
 }
 .btn:not(:last-child) {
   margin-right: 8px;
