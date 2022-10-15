@@ -35,10 +35,7 @@ footer.section {
   padding-top: 0;
   padding-bottom: 0;
 }
-header.section {
-  display: flex;
-  align-items: center;
-}
+
 footer.section {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -63,7 +60,6 @@ nav {
 
 .container.header {
   display: flex;
-  align-items: center;
 }
 .link {
   text-decoration: none;
@@ -115,9 +111,7 @@ nav {
 .white-logo {
   color: var(--background-color);
 }
-address {
-  font-style: normal;
-}
+
 ul {
   list-style-type: none;
 }
@@ -126,15 +120,33 @@ ul {
   justify-content: space-between;
   align-items: center;
 }
+/* Footer */
+.container .link.logo {
+  margin-bottom: 20px;
+}
+address {
+  font-style: normal;
+}
+.foot-adress {
+  margin-bottom: 9px;
+}
+.foot-contacts:not(:last-child) {
+  margin-bottom: 9px;
+}
 
 /* Studio */
 
-.list > .item:not(:last-child) .link {
+.list > .item:not(:last-child) {
   margin-right: 50px;
 }
 
 .list.contacts {
   margin-left: auto;
+}
+.list.peculiarities,
+.list.our-team {
+  gap: 30px;
+  align-items: flex-start;
 }
 
 .hero h1 {
@@ -182,9 +194,14 @@ footer {
   font-weight: 700;
   line-height: 1.14;
   color: var(--header-color);
+  margin-bottom: 10px;
 }
+
 .peculiarities p {
   line-height: 1.71;
+}
+.section.our-mission {
+  padding-top: 0;
 }
 .title {
   font-weight: 700;
@@ -195,34 +212,49 @@ footer {
 
   margin-bottom: 50px;
 }
+.our-team img {
+  margin-bottom: 30px;
+}
 .our-team h3 {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
   color: var(--header-color);
+  margin-bottom: 10px;
 }
 .our-team p {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+  margin-bottom: 30px;
 }
 /* Portfolio */
+.img-portfolio {
+  margin-bottom: 20px;
+}
+
 .title-portfolio {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--header-color);
+  margin-left: 24px;
+  margin-right: 24px;
 }
 .text-portfolio {
   font-size: 16px;
   line-height: 1.88;
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-bottom: 20px;
 }
 .list.buttons {
   justify-content: center;
+  margin-bottom: 50px;
 }
-.btn:not(:last-child) {
+.list > .item-portfolio:not(:last-child) {
   margin-right: 8px;
 }
 .btn {
@@ -251,5 +283,6 @@ footer {
 }
 .list.portfolio {
   flex-wrap: wrap;
-  flex-basis: cacl((100%-40px)/3);
+  gap: 30px;
+  /* flex-basis: cacl((100%-60px)/3); */
 }
