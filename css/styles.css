@@ -295,5 +295,6 @@ footer {
   border: 1px solid #eeeeee;
   margin-bottom: 30px;
 }
-.list.portfolio >.item-potrfolio:nth-child(n+7) {
+.list.portfolio > .item-potrfolio:nth-child(n + 7) {
   margin-bottom: 0px;
+}
